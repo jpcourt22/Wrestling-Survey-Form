@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1 id="title">How can the NCAA improve womens wrestling?</h1>
+                <p id="description">
+                    Thank you for taking the time to help us improve womens
+                    wrestling in the NCAA
+                </p>
+            </header>
+            <form action="jpcourt20@gmail.com" id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Enter name here"
+                        class="form-control"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Enter email here"
+                        class="form-control"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label id="age-label" for="age">Age(optional)</label>
+                    <input
+                        type="number"
+                        name="age"
+                        id="age"
+                        placeholder="Enter age here"
+                        class="form-control"
+                        max="120"
+                        min="10"
+                    />
+                </div>
+                <div class="form-group">
+                    <p>Which option best describes your role with wrestling</p>
+                    <select
+                        name="role"
+                        id="dropdown"
+                        class="form-control"
+                        required
+                    >
+                        <option disabled selected value>
+                            Select current role
+                        </option>
+                        <option value="womenwrester">Women wrestler</option>
+                        <option value="menwrester">Men wrestler</option>
+                        <option value="family">
+                            Family member of wrestler
+                        </option>
+                        <option value="fan">Fan</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <p>
+                        Do you think mens wrestling is more popular then womens
+                    </p>
+                    <label>
+                        <input
+                            type="radio"
+                            name="argument"
+                            value="definitely"
+                            class="input-radio"
+                            checked
+                        />Definitely
+                    </label>
+                    <label>
+                        <input
+                            type="radio"
+                            value="not-sure"
+                            name="argument"
+                            class="input-radio"
+                        />Not sure
+                    </label>
+                    <label>
+                        <input
+                            type="radio"
+                            name="argument"
+                            value="no"
+                            class="input-radio"
+                        />No
+                    </label>
+                    <div class="form-group">
+                        <p>What is wrestling to you?</p>
+                        <select
+                            name="whatiswrest"
+                            id="what-is-wrest"
+                            class="form-control"
+                            required
+                        >
+                            <option disabled selected value>
+                                Select an option
+                            </option>
+                            <option value="family">Family</option>
+                            <option value="sport">Sport</option>
+                            <option value="hobby">Hobby</option>
+                            <option value="way-to-stay-in-shape">
+                                Way to stay in shape
+                            </option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <p>
+                            How could the NCAA improve womens wrestling?
+                            <span class="clue">(check all that apply)</span>
+                        </p>
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="prefer"
+                                class="input-checkbox"
+                                value="moretournament"
+                            />More womens tournaments
+                        </label>
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="prefer"
+                                class="input-checkbox"
+                                value="biggerfanbase"
+                            />Bigger fan base
+                        </label>
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="prefer"
+                                class="input-checkbox"
+                                value="bettersocials"
+                            />Better socialmedia
+                        </label>
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="prefer"
+                                class="input-checkbox"
+                                value="normalize"
+                            />Normalize women in sports
+                        </label>
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="prefer"
+                                class="input-checkbox"
+                                value="supporting"
+                            />Supporting female wrestlers
+                        </label>
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="prefer"
+                                class="input-checkbox"
+                                value="promote"
+                            />Promote equal genders in wrestling
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <p>Any comments or suggestions?</p>
+                    <textarea
+                        id="comments"
+                        class="input-textarea"
+                        name="comment"
+                        placeholder="Enter your comment here..."
+                    ></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
